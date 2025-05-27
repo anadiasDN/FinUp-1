@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinUp - Principal</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+         <aside class="sidebar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="FinUp Logo">
+            </div>
+            <a href="perfil.html" class="profile">
+                <div class="avatar">U</div>
+                <div class="user-info">
+                    <p>Olá, User</p>
+                    <p class="email">user@gmail.com</p>
+                </div>
+            </a>
+            <nav class="menu">
+                <a href="main.html">Principal</a>
+                <a href="receitas.html">Receitas</a>
+                <a href="despesas.html">Despesas</a>
+                <a href="contas.html">Contas</a>
+                <a href="metas.html">Metas financeiras</a>
+            </nav>
+        </aside>
+
+
+        <main class="main-content">
+            <h2>Principal</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Saldo Atual</h3>
+                    <p>R$8.500</p>
+                </div>
+                <div class="card">
+                    <h3>Receita</h3>
+                    <p>R$5.200</p>
+                </div>
+                <div class="card">
+                    <h3>Despesa</h3>
+                    <p>R$1.700</p>
+                </div>
+            </div>
+
+            <div class="card chart-card">
+                <h3>Dashboard Financeiro</h3>
+                <canvas id="lineChart"></canvas>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

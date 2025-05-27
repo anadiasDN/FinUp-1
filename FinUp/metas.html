@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinUp - Metas Financeiras</title>
+    <link rel="stylesheet" href="css/metas.css">
+</head>
+<body>
+    <div class="container">
+          <aside class="sidebar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="FinUp Logo">
+            </div>
+            <a href="perfil.html" class="profile">
+                <div class="avatar">U</div>
+                <div class="user-info">
+                    <p>Olá, User</p>
+                    <p class="email">user@gmail.com</p>
+                </div>
+            </a>
+            <nav class="menu">
+                <a href="main.html">Principal</a>
+                <a href="receitas.html">Receitas</a>
+                <a href="despesas.html">Despesas</a>
+                <a href="contas.html">Contas</a>
+                <a href="metas.html">Metas financeiras</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h2>Adicionar Meta Financeira</h2>
+
+            <form id="meta-form">
+                <label for="nome-meta">Nome da Meta:</label>
+                <input type="text" id="nome-meta" placeholder="Ex: Comprar um carro" required>
+
+                <label for="valor-meta">Valor Objetivo:</label>
+                <input type="text" id="valor-meta" placeholder="R$ 0,00" required>
+
+                <label for="valor-atual">Valor Atual:</label>
+                <input type="text" id="valor-atual" placeholder="R$ 0,00" required>
+
+                <button type="submit">Adicionar Meta</button>
+            </form>
+
+            <h2>Histórico de Metas</h2>
+
+            <table class="metas-tabela">
+    <thead>
+        <tr>
+            <th>Meta</th>
+            <th>Valor Objetivo</th>
+            <th>Valor Atual</th>
+            <th>Progresso</th>
+            <th>Adicionar Valor</th>
+        </tr>
+    </thead>
+    <tbody id="metas-lista">
+    </tbody>
+</table>
+
+        </main>
+    </div>
+
+    <script src="js/metas.js"></script>
+</body>
+</html>

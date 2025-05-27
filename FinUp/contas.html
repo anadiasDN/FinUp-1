@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinUp - Contas</title>
+    <link rel="stylesheet" href="css/contas.css">
+</head>
+<body>
+    <div class="container">
+          <aside class="sidebar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="FinUp Logo">
+            </div>
+            <a href="perfil.html" class="profile">
+                <div class="avatar">U</div>
+                <div class="user-info">
+                    <p>Olá, User</p>
+                    <p class="email">user@gmail.com</p>
+                </div>
+            </a>
+            <nav class="menu">
+                <a href="main.html">Principal</a>
+                <a href="receitas.html">Receitas</a>
+                <a href="despesas.html">Despesas</a>
+                <a href="contas.html">Contas</a>
+                <a href="metas.html">Metas financeiras</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h2>Adicionar Conta Recorrente</h2>
+
+            <form id="conta-form">
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" placeholder="R$ 0,00" required>
+
+                <label for="categoria">Categoria:</label>
+                <input type="text" id="categoria" placeholder="Ex: Aluguel, Internet, Academia" required>
+
+                <label for="data">Data de pagamento:</label>
+                <input type="date" id="data" required>
+
+                <button type="submit">Adicionar Conta</button>
+            </form>
+
+            <h2>Histórico de Contas</h2>
+
+            <table class="contas-tabela">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Categoria</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="contas-lista">
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="js/contas.js"></script>
+</body>
+</html>

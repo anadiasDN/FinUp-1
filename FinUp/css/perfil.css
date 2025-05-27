@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #d0ecef;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #bde7eb;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.avatar {
+    background-color: #008c99;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info .email {
+    font-size: 12px;
+    color: #333;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #003f4f;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #a0d8de;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.main-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #003f4f;
+}
+
+.profile-card {
+    background-color: #e7f6f8;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.avatar-large {
+    background-color: #008c99;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    top: -35px;
+    left: 30px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #003f4f;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.profile-header h3 {
+    font-size: 24px;
+}
+
+.edit-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.profile-card hr {
+    border: none;
+    height: 2px;
+    background-color: #a0d8de;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.profile-info {
+    margin-left: 50px;
+}
+
+.profile-info p {
+    color: #003f4f;
+    margin: 10px 0;
+    font-size: 16px;
+}

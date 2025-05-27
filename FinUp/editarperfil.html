@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil - FinUp</title>
+    <link rel="stylesheet" href="css/editarperfil.css">
+</head>
+<body>
+    <div class="container">
+            <aside class="sidebar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="FinUp Logo">
+            </div>
+            <a href="perfil.html" class="profile">
+                <div class="avatar">U</div>
+                <div class="user-info">
+                    <p>Olá, User</p>
+                    <p class="email">user@gmail.com</p>
+                </div>
+            </a>
+            <nav class="menu">
+                <a href="main.html">Principal</a>
+                <a href="receitas.html">Receitas</a>
+                <a href="despesas.html">Despesas</a>
+                <a href="contas.html">Contas</a>
+                <a href="metas.html">Metas financeiras</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h2>Perfil</h2>
+
+            <div class="profile-card">
+                <div class="avatar-large">U</div>
+
+                <section>
+                    <h3>Edite as suas informações</h3>
+                    <hr>
+
+                    <form id="edit-profile-form">
+                        <label for="full-name">Nome completo:</label>
+                        <input type="text" id="full-name" value="User">
+
+                        <label for="username">Nome de usuário:</label>
+                        <input type="text" id="username" value="User">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" value="User@gmail.com">
+
+                        <button type="submit">Salvar alterações</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/editarperfil.js"></script>
+</body>
+</html>
